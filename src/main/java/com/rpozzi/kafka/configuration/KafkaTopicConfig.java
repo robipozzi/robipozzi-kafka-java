@@ -26,9 +26,8 @@ public class KafkaTopicConfig {
         return new KafkaAdmin(configs);
     }
 
-    @Bean
-    public NewTopic topic() {
-        return TopicBuilder.name(topicName)
-                .build();
-    }
+	@Bean
+	public NewTopic topic() {
+		return TopicBuilder.name(topicName).build();
+	}
 }
